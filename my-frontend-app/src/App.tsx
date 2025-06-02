@@ -29,7 +29,7 @@ const App: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`http://localhost:5021/businesses`, {
+      const response = await axios.get(`https://bussiness-search-scraper.onrender.com/businesses`, {
         params: { query },
       });
       console.log(response.data); // Log the data to verify phone numbers
