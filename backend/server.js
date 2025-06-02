@@ -127,5 +127,5 @@ app.get('/scrape-contact', async (req, res) => {
     }
 });
 
-const PORT = 5021;
+const PORT = process.env.PORT || 5021;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
